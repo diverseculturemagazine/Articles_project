@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المجلة الإلكترونية</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="text-white text-center py-3 ">
+        <!-- Logo and Title -->
+        <div class="header-container" style="display: flex; align-items: center; justify-content: space-between;">
+            <!-- Logo -->
+            <img src="img/logo.webp" alt="شعار المجلة" class="img-fluid" style="max-height: 80px; margin-right: 50px;">
+            <!-- Title and Description -->
+            <div style=" margin-left: 500px;">
+                <h1>مجلة الثقافة المتنوعة</h1>
+                <p>استكشف مقالاتنا المتنوعة</p>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">الرئيسية</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="articles.html">المقالات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">حول المجلة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">اتصل بنا</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-4">
+        <!-- Most Read Articles -->
+        <section>
+            <h2>المقالات الأكثر قراءة</h2>
+            <div class="d-flex flex-wrap justify-content-between">
+                 <!-- Article Card 2 -->
+                 <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="img/tech1.jpg" id="article1-img" class="card-img-top" alt="التكنولوجيا" >
+                    <div class="card-body">
+                        <h5 class="card-title">التكنولوجيا الحديثة</h5>
+                        <p class="card-text">تشهد التكنولوجيا تطورًا سريعًا يشمل الذكاء الاصطناعي، الروبوتات، وإنترنت الأشياء. هذه الابتكارات تغيّر من طريقة عيشنا، تسهيل الأعمال، وتعزيز التواصل بين الناس.</p>
+                        <button class="btn btn-primary" onclick="openArticle(0)">اقرأ المزيد</button>
+                    </div>
+                </div>
+            </div>
+
+                <div class="col-md-4 mb-4">
+                 <div class="card h-100">
+                    <img src="img/life1.jfif" id="article2-img" class="card-img-top" alt="الصحة" >
+                    <div class="card-body">
+                        <h5 class="card-title">نصائح صحية</h5>
+                        <p class="card-text">
+                            اتباع أسلوب حياة صحي يشمل تناول الطعام المتوازن، ممارسة الرياضة بانتظام، والحفاظ على نوم كافٍ. يساعد ذلك في تقليل الأمراض المزمنة وتحسين الصحة النفسية والجسدية بشكل عام.</p>
+                        
+                        <button class="btn btn-primary" onclick="openArticle(4)">اقرأ المزيد</button>
+
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/free1.jfif" id="article3-img" class="card-img-top" alt="الحرية" >
+                        <div class="card-body">
+                            <h5 class="card-title">عن الحرية وحدودها</h5>
+                            <p class="card-text">الحرية هي حق إنساني أساسي، ولكنها تأتي مع مسؤوليات. يجب تحقيق التوازن بين الحرية الشخصية واحترام حقوق الآخرين والقوانين المجتمعية.</p>
+                            <button class="btn btn-primary" onclick="openArticle(10)">اقرأ المزيد</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/sport2.jpg" id="article4-img" class="card-img-top" alt="الرياضة">
+                        <div class="card-body">
+                            <h5 class="card-title">الرياضة وأهميتها</h5>
+                            <p class="card-text"><br>تعد الرياضة نشاطًا مهمًا يساهم في تحسين اللياقة البدنية وتعزيز الصحة النفسية. ممارسة الرياضة بانتظام تساعد في تقليل التوتر وزيادة الثقة بالنفس.</p>
+                            <button class="btn btn-primary" onclick="openArticle(6)">اقرأ المزيد</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="img/child.jfif" id="article5-img" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">عن تربية الطفل</h5>
+                            <p class="card-text"><br>تنشئة الأطفال تعتمد على توفير بيئة داعمة تشمل الحب والانضباط. التربية الصحيحة تسهم في بناء شخصية قوية ومستقلة تساعدهم على مواجهة التحديات.</p>
+    
+                            <button class="btn btn-primary" onclick="openArticle(18)">اقرأ المزيد</button>
+                        </div>
+                    </div>
+                </div>
+            
+
+        </section>
+    </div>
+        <!-- Latest Articles -->
+        <section class="mt-5">
+            <h2>أحدث المقالات</h2>
+            <div class="d-flex justify-content-between flex-wrap">
+                <div class="row">
+
+                   
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                    <img src="img/tech7.jpg" class="card-img-top" alt="العلم">
+                    <div class="card-body">
+                        <h5 class="card-title">اهم الاكتشافات العلمية</h5>
+                        <button class="btn btn-primary" onclick="openArticle(12)">اقرأ المزيد</button>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                    <img src="img/body1.jfif" class="card-img-top" alt="الجسد">
+                    <div class="card-body">
+                        <h5 class="card-title">لغة الجسد</h5>
+                        <button class="btn btn-primary" onclick="openArticle(7)">اقرأ المزيد</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 مجلة الثقافة المتنوعة. جميع الحقوق محفوظة.</p>
+        <p>للتواصل: info@magazine.com</p>
+    </footer>
+
+    <!-- JavaScript Section -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
